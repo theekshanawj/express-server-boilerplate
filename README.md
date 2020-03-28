@@ -104,6 +104,15 @@ app
 
 ```
 
+## Scripts in package.json
+- `yarn`: Download dependencies
+- `yarn start`: Start the App in development mode
+- `yarn build`: Build the App; generate a `dist` folder with built code
+- `yarn prod:start`: Start the App in production moda, `yarn build` is a prerequisite for this
+- `yarn clean`: Remove the `dist` folder
+- `yarn test`: Run tests
+
+
 ## TODO
 
 - Unit tests
