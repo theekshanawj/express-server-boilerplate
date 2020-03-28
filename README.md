@@ -116,3 +116,4 @@ app
 ## TODO
 
 - Unit tests
+- Deployment scripts
