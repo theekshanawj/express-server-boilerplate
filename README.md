@@ -10,7 +10,7 @@ Skeleton Express Web server application. Boilerplate code is written for you, so
 Code in this repo has a reference implementation for a web-service to get information about internet's most favourite animal **cat**.
 https://alexwohlbruck.github.io/cat-facts/ provides set of APIs to get `facts` about animals, this will be the service consumed by this reference app.
 
-### How to run
+### How to run the app
 
 - Clone/Download this repo and navigate to app root direcotry thorugh a terminal
 - Run `yarn` to download required dependencies
@@ -21,8 +21,21 @@ https://alexwohlbruck.github.io/cat-facts/ provides set of APIs to get `facts` a
 
 
  <sup>$</sup> `.env` defines `PORT=5000`
-
-
+ 
+ ## How to use this boilerplate code
+ 
+ Reference implementation serves as a guide to an implementation of a Express web server via this boilerplate code.
+ Follow the guide to get started with implementing a Express app quickly.
+ 
+ - Define controllers/routes in your application in `controllers` directory. Note: For easy reference define the file which contains  `someroute` as `someroute.js`
+ - Define any route specific middleware in `controllers/router-middleware` and bind them to the routes. Note: For easy reference define the route middleware as `someroute-middleware.js` 
+ - In the main app (`src/index.js`) add route definitions using `app.use`
+ - Defines application level middleware in `middleware` directory
+ - Define service layer implementation in `services` directory
+ - Define downstream service calls, connectors in the `external-apis` directory
+ 
+See **Folder structure** section below to identify responsibility of each directory.
+Note: Add, delete or modify current implementation to cater for requirements.
 
 ## Folder structure
 
@@ -90,3 +103,7 @@ app
 ├── package.json # Dependencies 
 
 ```
+
+## TODO
+
+- Unit tests
