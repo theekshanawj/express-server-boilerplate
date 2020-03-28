@@ -1,6 +1,28 @@
 # express-server-boilerplate
 Skeleton Express Web server application. Boilerplate code is written for you, so you can start coding fast.
 
+## Required
+- Node
+- Yarn
+
+## Reference implementation
+
+Code in this repo has a reference implementation for a web-service to get information about internet's most favourite animal **cat**.
+https://alexwohlbruck.github.io/cat-facts/ provides set of APIs to get `facts` about animals, this will be the service consumed by this reference app.
+
+### How to run
+
+- Clone/Download this repo and navigate to app root direcotry thorugh a terminal
+- Run `yarn` to download required dependencies
+- Run `yarn start`. (You should see `App started at port 5000` in your terminal) <sup>$</sup>
+- Application will start on `http://localhost:5000`
+- Open your favourite browser and navigate to `http://localhost:5000/api/docs`
+- Play with `GET /cats/facts/` API end-point
+
+
+ <sup>$</sup> `.env` defines `PORT=5000`
+
+
 
 ## Folder structure
 
