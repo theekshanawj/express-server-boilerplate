@@ -2,7 +2,7 @@
  * Swagger Definitions: Expand them as required.
  */
 import swaggerJSDocs from 'swagger-jsdoc';
-import packageJson from '../../../package';
+import packageJson from '../../package';
 
 const swaggerDocs = {
     swaggerDefinition: {
