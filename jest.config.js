@@ -1,5 +1,5 @@
 module.exports = {
-    roots: ["<rootDir>/src/sample-service/tests"], //TODO: replace sample-service by the name you give
+    roots: ["<rootDir>/src/tests"], //TODO: replace sample-service by the name you give
     testMatch: [
       "/**/*.tests.js"
     ],
