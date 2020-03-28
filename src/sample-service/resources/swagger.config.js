@@ -1,5 +1,5 @@
 /**
- * Swagger Definitions: Use them as required.
+ * Swagger Definitions: Expand them as required.
  */
 import swaggerJSDocs from 'swagger-jsdoc';
 import packageJson from '../../../package';

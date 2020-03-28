@@ -1,7 +1,7 @@
 /**
  * Application level error utilities.
  * AppError is generic error class.
- * invalidRequestError, notFoundError and internalServerError are objects that responds to 400, 404 and 500 errors
+ * invalidRequestError, notFoundError and internalServerError are objects that responds to 400, 404 and 500 errors.
  */
 
 class AppError extends Error {

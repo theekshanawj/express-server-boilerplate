@@ -1,5 +1,5 @@
 /**
- * This is the standard error handler middleware as described in https://expressjs.com/en/guide/error-handling.html
+ * This is the standard error handler middleware as described in https://expressjs.com/en/guide/error-handling.html.
  */
 import { AppError, internalServerError } from '../utils';
 import { errorMessages } from '../constants';

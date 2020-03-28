@@ -1,6 +1,6 @@
 /**
- * Controller/routes relevant to / (root) defined here
- * Note: index.js is intended for / routes (of course you can change by changing main app)
+ * Controller/routes relevant to / (root) defined here.
+ * Note: index.js is intended for / routes (of course you can change by changing main app).
  */
 
 import express from 'express';

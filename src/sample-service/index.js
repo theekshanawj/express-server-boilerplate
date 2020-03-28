@@ -6,7 +6,7 @@ import { initialBindings, finalBindings } from './middleware';
 import { DEFAULT_APP_PORT } from './constants';
 
 /**
- * Import controllers. This is as required by your application
+ * Import controllers. This is as required by your application.
  * TODO: This has to be done manually.
  */
 import rootControllers from './controllers';
@@ -17,7 +17,7 @@ const app = express();
 const PORT = process.env.PORT || DEFAULT_APP_PORT;
 
 /**
- * Middleware that need to be called before request hits the relevant controllers
+ * Middleware that need to be called before request hits the relevant controllers.
  */
 initialBindings(app);
 
@@ -30,7 +30,7 @@ app.use('/', rootControllers);
 app.use('/cats', exportControllers);
 
 /**
- * Fallback middleware such as error-middleware, 404 cases, etc
+ * Fallback middleware such as error-middleware, 404 cases, etc.
  */
 
 finalBindings(app);

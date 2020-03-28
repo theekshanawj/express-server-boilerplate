@@ -7,8 +7,7 @@ import swaggerUI from 'swagger-ui-express';
 import { ALL_ROUTES, SWAGGER_URL } from '../constants';
 
 /**
- * Import required middleware
- *
+ * Import required middleware.
  */
 import basic from './basic';
 import headerValidators from './request-validators';

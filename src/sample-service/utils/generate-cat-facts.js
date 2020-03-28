@@ -1,6 +1,6 @@
 /**
- * Utility method that generate cat facts array
- * Refer https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html
+ * Utility method that generate cat fact array.
+ * Refer https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html.
  */
 
 const generateCatFacts = (result) => {

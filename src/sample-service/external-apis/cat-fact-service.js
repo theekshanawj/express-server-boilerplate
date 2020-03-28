@@ -1,6 +1,7 @@
 /**
  * This method will expose API end-points to cat-fact API.
- * Use similar file(s) to call your intended APIs.
+ * To call some other API, define a connector first,
+ * Then define relevant methods to expose API methods, in a separate file.
  */
 import { stringify } from 'qs';
 

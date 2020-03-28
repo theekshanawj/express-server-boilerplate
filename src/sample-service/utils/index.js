@@ -1,5 +1,5 @@
 /**
- * Return utils such they can be accessed with the pattern import { to } from '../utils/'
+ * Return utils such they can be accessed with the pattern import { to } from '../utils/'.
  * Add utilities as files, combined similar utility to same file, etc.
  */
 

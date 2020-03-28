@@ -1,5 +1,5 @@
 /**
- * Middleware related to /cats route is defined here
+ * Middleware related to /cats route is defined here.
  */
 import { invalidRequestError } from '../../utils';
 import { errorMessages } from '../../constants';

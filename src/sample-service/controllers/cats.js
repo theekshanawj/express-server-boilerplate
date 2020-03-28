@@ -1,6 +1,6 @@
 /**
  * Controllers/Router relevant to cats defined here.
- * Note: This files named as cats.js to be align with the routes it defines /cats.
+ * Note: This file is named as cats.js to be align with the routes it defines /cats.
  * Follow this pattern if applicable.
  */
 import express from 'express';

@@ -1,7 +1,7 @@
 /**
- * Resolve a promise and return [error, result]
- * If promise was resolved -> [null, result]
- * If promise was rejected -> [error, null]
+ * Resolve a promise and return [error, result].
+ * If promise was resolved -> [null, result].
+ * If promise was rejected -> [error, null].
  *
  */
 const to = (promise) => {

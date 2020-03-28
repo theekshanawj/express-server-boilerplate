@@ -2,7 +2,7 @@
  * Application level constants.
  * Feel free to add new file in this directory.
  * Export those files similar to 'error-message' export below.
- * this will allow unified access to constants by ex: import { ALL_ROUTES } from '../constants/'
+ * This will allow unified access to constants by ex: import { ALL_ROUTES } from '../constants/'
  */
 
 export * from './error-messages';
