@@ -1,0 +1,35 @@
+{
+  "name": "express-sample-service-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code for an Express sample app",
+  "main": "./src/sample-service/index.js",
+  "author": "Theekshana Wijesinghe",
+  "license": "MIT",
+  "config": {
+    "app-name": "sample-service"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production yarn clean && babel src -d dist",
+    "start": " NODE_ENV=development nodemon --exec babel-node ./bootstrap",
+    "prod:start": "NODE_ENV=production node ./bootstrap",
+    "clean": "rm -rf ./dist",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "qs": "^6.9.1",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
