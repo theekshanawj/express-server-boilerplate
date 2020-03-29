@@ -10,7 +10,7 @@ import { DEFAULT_APP_PORT } from './constants';
  * TODO: This has to be done manually.
  */
 import rootControllers from './controllers';
-import exportControllers from './controllers/cats';
+import catController from './controllers/cats';
 
 const app = express();
 
@@ -27,7 +27,7 @@ initialBindings(app);
  * TODO: This has to be manually.
  */
 app.use('/', rootControllers);
-app.use('/cats', exportControllers);
+app.use('/cats', catController);
 
 /**
  * Fallback middleware such as error-middleware, 404 cases, etc.
