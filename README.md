@@ -1,6 +1,8 @@
 # express-server-boilerplate
 Skeleton Express Web server application. Boilerplate code is written for you, so you can start coding fast.
 
+- You can use `ES6` syntax 
+
 ## Required
 - Node
 - Yarn
@@ -27,14 +29,23 @@ https://alexwohlbruck.github.io/cat-facts/ provides set of APIs to get `facts` a
  Reference implementation serves as a guide to an implementation of a Express web server via this boilerplate code.
  Follow the guide to get started with implementing a Express app quickly.
  
- - Define controllers/routes in your application in `controllers` directory. Note: For easy reference define the file which contains  `someroute` as `someroute.js`
- - Define any route specific middleware in `controllers/router-middleware` and bind them to the routes. Note: For easy reference define the route middleware as `someroute-middleware.js` 
+ - Define controllers/routes in your application in the `controllers` directory
+   
+   Note: For easy reference name the file which contains router definitions for `someroute` as `someroute.js`
+ - Define any route specific middleware in the `controllers/router-middleware` directory and bind them to the routes
+ 
+   Note: For easy reference define the route middleware as `someroute-middleware.js` 
  - In the main app (`src/index.js`) add route definitions using `app.use`
- - Defines application level middleware in `middleware` directory
- - Define service layer implementation in `services` directory
+ - Defines application level middleware in the `middleware` directory
+ 
+   Note: Middleware can bound here before the controller defintions or after
+ - Define service layer implementations in the `services` directory
  - Define downstream service calls, connectors in the `external-apis` directory
  
-See **Folder structure** section below to identify responsibility of each directory.
+   A Rest-client has been already implemented using `node-fetch`, customize as required
+ - See **Folder structure** below to identify use cases of other directories, all of them have straightforward use case.
+ 
+
 Note: Add, delete or modify current implementation to cater for requirements.
 
 ## Folder structure
