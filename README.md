@@ -14,7 +14,7 @@ https://alexwohlbruck.github.io/cat-facts/ provides set of APIs to get `facts` a
 
 ### How to run the app
 
-- Clone/Download this repo and navigate to app root direcotry thorugh a terminal
+- Clone/Download this repo and navigate to app root directory through a terminal
 - Run `yarn` to download required dependencies
 - Run `yarn start`. (You should see `App started at port 5000` in your terminal) <sup>$</sup>
 - Application will start on `http://localhost:5000`
@@ -31,19 +31,19 @@ https://alexwohlbruck.github.io/cat-facts/ provides set of APIs to get `facts` a
  
  - Define controllers/routes in your application in the `controllers` directory
    
-   Note: For easy reference name the file which contains router definitions for `someroute` as `someroute.js`
+   For easy reference name the file which contains router definitions for `someroute` as `someroute.js`
  - Define any route specific middleware in the `controllers/router-middleware` directory and bind them to the routes
  
-   Note: For easy reference define the route middleware as `someroute-middleware.js` 
+   For easy reference define the route middleware as `someroute-middleware.js` 
  - In the main app (`src/index.js`) add route definitions using `app.use`
  - Defines application level middleware in the `middleware` directory
  
-   Note: Middleware can bound here before the controller defintions or after
+   Middleware can bound before the controller definitions or after
  - Define service layer implementations in the `services` directory
  - Define downstream service calls, connectors in the `external-apis` directory
  
    A Rest-client has been already implemented using `node-fetch`, customize as required
- - See **Folder structure** below to identify use cases of other directories, all of them have straightforward use case.
+ - See **Folder structure** below to identify use cases of other directories, all of them are straightforward.
  
 
 Note: Add, delete or modify current implementation to cater for requirements.
@@ -53,13 +53,13 @@ Note: Add, delete or modify current implementation to cater for requirements.
 ```
 app
 ├── src
-│       ├── constants # Direcotry that contains application-level constants
+│       ├── constants # Directory that contains application-level constants
 │       │   ├── index.js # Define application level constants 
 │       │   ├── ... # Other constants 
 
-│       ├── controllers # Direcotry that contains routes/APIs exposed by the web-service
+│       ├── controllers # Directory that contains routes/APIs exposed by the web-service
 │       │   ├── router-middleware # Directory that contains middleware for routes 
-│       │   │   ├── cats-middleware.js # Middlewares related to /cats routes
+│       │   │   ├── cats-middleware.js # Middleware related to /cats routes
 │       │   │   ├── ... # Other route specific middleware
 │       │   ├── cats.js # APIs relevant to /cats are defined here
 │       │   ├── ... # Other controller definitions
@@ -77,10 +77,10 @@ app
 
 │       ├── middleware # Direcotory that contains application-level middleware 
 │       │       ├── request-validator.js # Validate requests 
-│       │       ├── ... # Other middleware defintions
+│       │       ├── ... # Other middleware definitions
 
 │       ├── resources # Directory that contains application resources
-│       │       ├── swagger-config.js # Swagger defintions
+│       │       ├── swagger-config.js # Swagger definitions
 │       │       ├── ... # Other resources
 
 │       ├── services # Directory that contains service definitions for controllers
@@ -105,7 +105,7 @@ app
 
 │       ├── index.js # Main app
 
-├── boostrap # Directory that contains boostrap scripts to start the application depending on the NODE_ENV
+├── bootstrap # Directory that contains bootstrap scripts to start the application depending on the NODE_ENV
 
 ├── .env # Application ENVs for development
 
@@ -117,9 +117,9 @@ app
 
 ## Scripts in package.json
 - `yarn`: Download dependencies
-- `yarn start`: Start the App in development mode
+- `yarn start`: Start the App in development mode. `nodemon` is integrated
 - `yarn build`: Build the App; generate a `dist` folder with built code
-- `yarn prod:start`: Start the App in production moda, `yarn build` is a prerequisite for this
+- `yarn prod:start`: Start the App in production mode, `yarn build` is a prerequisite for this
 - `yarn clean`: Remove the `dist` folder
 - `yarn test`: Run tests
 
